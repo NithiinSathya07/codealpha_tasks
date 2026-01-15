@@ -1,0 +1,6 @@
+To run the code for the chatbot for FAQs:-
+
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+python src/chatbot.py
