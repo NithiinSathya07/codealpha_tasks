@@ -2,244 +2,122 @@
   "intents": [
     {
       "tag": "greeting",
-      "patterns": ["Hi there", "How are you", "Is anyone there?", "Hey", "Hola", "Hello", "Good day"],
-      "responses": ["Hello", "Good to see you again", "Hi there, how can I help?"],
-      "context": [""]
+      "patterns": ["Hi", "Hi there", "Hello", "Hey", "Good day"],
+      "responses": ["Hello!", "Good to see you again.", "Hi there, how can I help?"]
     },
     {
       "tag": "goodbye",
-      "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
-      "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
-      "context": [""]
+      "patterns": ["Bye", "Goodbye", "See you later"],
+      "responses": ["See you!", "Have a nice day!", "Bye! Come back again soon."]
     },
     {
       "tag": "thanks",
-      "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
-      "responses": ["My pleasure", "You're Welcome"],
-      "context": [""]
+      "patterns": ["Thanks", "Thank you", "That's helpful"],
+      "responses": ["You're welcome!", "My pleasure!"]
     },
 
     {
-      "tag": "query",
-      "patterns": ["What is LinkedIn?"],
-      "responses": ["LinkedIn is a professional networking platform used for career development and job searching."],
-      "context": [""]
+      "tag": "linkedin_about",
+      "patterns": [
+        "What is LinkedIn?",
+        "Explain LinkedIn",
+        "What is LinkedIn used for?"
+      ],
+      "responses": [
+        "LinkedIn is a professional networking platform used for career development and job searching."
+      ]
     },
+
     {
-      "tag": "query",
-      "patterns": ["Who owns LinkedIn?"],
-      "responses": ["LinkedIn is owned by Microsoft."],
-      "context": [""]
+      "tag": "linkedin_owner",
+      "patterns": [
+        "Who owns LinkedIn?",
+        "LinkedIn owner"
+      ],
+      "responses": [
+        "LinkedIn is owned by Microsoft."
+      ]
     },
+
     {
-      "tag": "query",
-      "patterns": ["Is LinkedIn free to use?"],
-      "responses": ["Yes, LinkedIn is free to use with optional paid premium plans."],
-      "context": [""]
+      "tag": "linkedin_account",
+      "patterns": [
+        "How do I create a LinkedIn account?",
+        "Create LinkedIn account",
+        "Sign up on LinkedIn"
+      ],
+      "responses": [
+        "You can create a LinkedIn account by signing up with your email and completing your profile."
+      ]
     },
+
     {
-      "tag": "query",
-      "patterns": ["What is LinkedIn Premium?"],
-      "responses": ["LinkedIn Premium is a paid subscription offering advanced features like InMail and profile insights."],
-      "context": [""]
+      "tag": "linkedin_profile",
+      "patterns": [
+        "What is a LinkedIn profile?",
+        "Explain LinkedIn profile",
+        "LinkedIn profile meaning"
+      ],
+      "responses": [
+        "A LinkedIn profile is your professional online resume showcasing skills, experience, and education."
+      ]
     },
+
     {
-      "tag": "query",
-      "patterns": ["How do I create a LinkedIn account?"],
-      "responses": ["You can create a LinkedIn account by signing up with your email and completing your profile."],
-      "context": [""]
+      "tag": "linkedin_profile_improve",
+      "patterns": [
+        "How can I improve my LinkedIn profile?",
+        "Improve LinkedIn profile",
+        "Make LinkedIn profile better"
+      ],
+      "responses": [
+        "You can improve your profile by adding a professional photo, skills, and work experience."
+      ]
     },
+
     {
-      "tag": "query",
-      "patterns": ["What is a LinkedIn profile?"],
-      "responses": ["A LinkedIn profile is your professional online resume showcasing skills, experience, and education."],
-      "context": [""]
+      "tag": "linkedin_premium",
+      "patterns": [
+        "What is LinkedIn Premium?",
+        "Is LinkedIn Premium free?"
+      ],
+      "responses": [
+        "LinkedIn Premium is a paid subscription offering advanced features like InMail and profile insights."
+      ]
     },
+
     {
-      "tag": "query",
-      "patterns": ["How can I improve my LinkedIn profile?"],
-      "responses": ["You can improve your profile by adding a professional photo, skills, and work experience."],
-      "context": [""]
+      "tag": "linkedin_students",
+      "patterns": [
+        "Can students use LinkedIn?",
+        "Is LinkedIn useful for freshers?"
+      ],
+      "responses": [
+        "Yes, LinkedIn is very useful for students and freshers to build professional presence."
+      ]
     },
+
     {
-      "tag": "query",
-      "patterns": ["What is LinkedIn used for?"],
-      "responses": ["LinkedIn is used for professional networking, job searching, and career growth."],
-      "context": [""]
+      "tag": "linkedin_jobs",
+      "patterns": [
+        "How do I search for jobs on LinkedIn?",
+        "Does LinkedIn help in job search?"
+      ],
+      "responses": [
+        "You can search for jobs using the LinkedIn Jobs section."
+      ]
     },
+
     {
-      "tag": "query",
-      "patterns": ["Can students use LinkedIn?"],
-      "responses": ["Yes, students can use LinkedIn to build networks and explore career opportunities."],
-      "context": [""]
-    },
-    {
-      "tag": "query",
-      "patterns": ["What is a LinkedIn connection?"],
-      "responses": ["A LinkedIn connection is a professional relationship between two users."],
-      "context": [""]
-    },
-    {
-      "tag": "query",
-      "patterns": ["How many connections can I have on LinkedIn?"],
-      "responses": ["You can have up to 30,000 first-degree connections on LinkedIn."],
-      "context": [""]
-    },
-    {
-      "tag": "query",
-      "patterns": ["What does 1st, 2nd, and 3rd connection mean?"],
-      "responses": ["These represent how closely you are connected to another LinkedIn member."],
-      "context": [""]
-    },
-    {
-      "tag": "query",
-      "patterns": ["What is LinkedIn InMail?"],
-      "responses": ["InMail allows you to message LinkedIn members you are not connected with."],
-      "context": [""]
-    },
-    {
-      "tag": "query",
-      "patterns": ["What is LinkedIn endorsement?"],
-      "responses": ["Endorsements validate your skills by other LinkedIn users."],
-      "context": [""]
-    },
-    {
-      "tag": "query",
-      "patterns": ["What is a LinkedIn recommendation?"],
-      "responses": ["Recommendations are written testimonials from colleagues or managers."],
-      "context": [""]
-    },
-    {
-      "tag": "query",
-      "patterns": ["How do I search for jobs on LinkedIn?"],
-      "responses": ["You can search for jobs using the LinkedIn Jobs section."],
-      "context": [""]
-    },
-    {
-      "tag": "query",
-      "patterns": ["Can recruiters see my LinkedIn profile?"],
-      "responses": ["Yes, recruiters can view your profile if it is public or shared."],
-      "context": [""]
-    },
-    {
-      "tag": "query",
-      "patterns": ["What is LinkedIn Learning?"],
-      "responses": ["LinkedIn Learning is an online learning platform offering professional courses."],
-      "context": [""]
-    },
-    {
-      "tag": "query",
-      "patterns": ["Is LinkedIn Learning free?"],
-      "responses": ["LinkedIn Learning is paid but offers a free trial."],
-      "context": [""]
-    },
-    {
-      "tag": "query",
-      "patterns": ["How do I post on LinkedIn?"],
-      "responses": ["You can post by clicking the start a post button on your LinkedIn feed."],
-      "context": [""]
-    },
-    {
-      "tag": "query",
-      "patterns": ["What is a LinkedIn company page?"],
-      "responses": ["A company page represents an organization on LinkedIn."],
-      "context": [""]
-    },
-    {
-      "tag": "query",
-      "patterns": ["What is LinkedIn networking?"],
-      "responses": ["Networking on LinkedIn means building professional relationships."],
-      "context": [""]
-    },
-    {
-      "tag": "query",
-      "patterns": ["Can I hide my LinkedIn profile?"],
-      "responses": ["Yes, you can adjust privacy settings to hide your profile."],
-      "context": [""]
-    },
-    {
-      "tag": "query",
-      "patterns": ["What is LinkedIn headline?"],
-      "responses": ["The headline is a short description shown below your name on LinkedIn."],
-      "context": [""]
-    },
-    {
-      "tag": "query",
-      "patterns": ["What is LinkedIn summary?"],
-      "responses": ["The summary is a brief introduction highlighting your professional background."],
-      "context": [""]
-    },
-    {
-      "tag": "query",
-      "patterns": ["How do I add skills on LinkedIn?"],
-      "responses": ["You can add skills in the skills section of your profile."],
-      "context": [""]
-    },
-    {
-      "tag": "query",
-      "patterns": ["Can I message someone without connecting?"],
-      "responses": ["Only LinkedIn Premium users can message non-connections using InMail."],
-      "context": [""]
-    },
-    {
-      "tag": "query",
-      "patterns": ["What is LinkedIn algorithm?"],
-      "responses": ["The LinkedIn algorithm decides which posts appear in your feed."],
-      "context": [""]
-    },
-    {
-      "tag": "query",
-      "patterns": ["How do I delete my LinkedIn account?"],
-      "responses": ["You can delete your account from the account settings page."],
-      "context": [""]
-    },
-    {
-      "tag": "query",
-      "patterns": ["Is LinkedIn safe to use?"],
-      "responses": ["Yes, LinkedIn is generally safe when privacy settings are used correctly."],
-      "context": [""]
-    },
-    {
-      "tag": "query",
-      "patterns": ["What is LinkedIn profile strength?"],
-      "responses": ["Profile strength indicates how complete your LinkedIn profile is."],
-      "context": [""]
-    },
-    {
-      "tag": "query",
-      "patterns": ["Can employers post jobs on LinkedIn?"],
-      "responses": ["Yes, employers can post job listings on LinkedIn."],
-      "context": [""]
-    },
-    {
-      "tag": "query",
-      "patterns": ["What is LinkedIn Open to Work?"],
-      "responses": ["Open to Work shows recruiters that you are available for job opportunities."],
-      "context": [""]
-    },
-    {
-      "tag": "query",
-      "patterns": ["Can I block someone on LinkedIn?"],
-      "responses": ["Yes, LinkedIn allows users to block others."],
-      "context": [""]
-    },
-    {
-      "tag": "query",
-      "patterns": ["What is LinkedIn analytics?"],
-      "responses": ["LinkedIn analytics provide insights on profile views and post engagement."],
-      "context": [""]
-    },
-    {
-      "tag": "query",
-      "patterns": ["Does LinkedIn help in job search?"],
-      "responses": ["Yes, LinkedIn is one of the most popular platforms for job searching."],
-      "context": [""]
-    },
-    {
-      "tag": "query",
-      "patterns": ["Is LinkedIn useful for freshers?"],
-      "responses": ["Yes, LinkedIn is very useful for freshers to build professional presence."],
-      "context": [""]
+      "tag": "linkedin_learning",
+      "patterns": [
+        "What is LinkedIn Learning?",
+        "Is LinkedIn Learning free?"
+      ],
+      "responses": [
+        "LinkedIn Learning is an online learning platform offering professional courses with a free trial."
+      ]
     }
   ]
 }
+
